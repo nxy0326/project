@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <title> FindTilePath Demo</title>
-    <script src="/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/phaser.min.js"></script>
-    <script src="/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/TilemapLayer.findTilePath.js"></script>
-    <script src ="/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js"></script>
+    <script src="E:\project\MyGameMap\web\Find_Road\js\phaser.min.js"></script>
+    <script src="E:\project\MyGameMap\web\Find_Road\js\TilemapLayer.findTilePath.js"></script>
+    <script src ="E:\project\MyGameMap\web\Find_Road\js\jquery.js"></script>
     <style>
         body {margin: 0;padding: 0;	background: url("assets/caodi.jpg")}
         canvas {margin: 0 auto;	}
@@ -35,7 +35,7 @@
             loading.animations.play("loading");
             game.load.spritesheet("hero", "assets/car.png", 32, 32);
             game.load.image("maptiles", "assets/pintu.png");
-            game.load.tilemap("worldmap", "/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/roadmap.json", null, Phaser.Tilemap.TILED_JSON);
+            game.load.tilemap("worldmap", "E:\\project\\MyGameMap\\web\\Find_Road\\assets\\roadmap.json", null, Phaser.Tilemap.TILED_JSON);
         };
         this.create = function(){
             map = game.add.tilemap("worldmap");

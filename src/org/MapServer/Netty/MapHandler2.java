@@ -42,7 +42,7 @@ public class MapHandler2 extends ChannelInboundHandlerAdapter {//百度地图
 
         if (url.equals("/navigation1.html")){
             System.out.println(url+"sssaaaaaaaaaaa");
-            FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/navigation1.html");
+            FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\navigation1.html");
             FileChannel fc = fin.getChannel();
 
             ByteBuffer bf = ByteBuffer.allocate(8000);
@@ -60,7 +60,7 @@ public class MapHandler2 extends ChannelInboundHandlerAdapter {//百度地图
             response.headers().setInt(CONTENT_LENGTH, ((DefaultFullHttpResponse) response).content().readableBytes());
             ctx.writeAndFlush(response);
         }
-        if (url.equals("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/roadmap.json")){
+        if (url.equals("E:\\project\\MyGameMap\\web\\Find_Road\\assets\\roadmap.json")){
             System.out.println(url+"111111111111111111");
             FileInputStream fin = new FileInputStream(url);
             FileChannel fc = fin.getChannel();

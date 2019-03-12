@@ -44,7 +44,7 @@ public class MapHandler1 extends ChannelInboundHandlerAdapter {//游戏地图
         if (url.equals("/game.html")) {//游戏地图页面
 //            try {
             System.out.println(url + "sssssssssssssssss");
-            FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/game.html");
+            FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\game.html");
             FileChannel fc = fin.getChannel();
 
             ByteBuffer bf = ByteBuffer.allocate(7000);
@@ -69,7 +69,7 @@ public class MapHandler1 extends ChannelInboundHandlerAdapter {//游戏地图
         }
         if (url.equals("/create.html")){//创建地图的页面
             System.out.println(url + "sssssssssssssssss");
-            FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/create.html");
+            FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\create.html");
             FileChannel fc = fin.getChannel();
 
             ByteBuffer bf = ByteBuffer.allocate(7000);
@@ -113,7 +113,7 @@ public class MapHandler1 extends ChannelInboundHandlerAdapter {//游戏地图
             System.out.println();
             String mess = "";
             byte[] imgbyte;
-            FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/" + url);
+            FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\" + url);
             int img_size = fin.available();
 //                    System.out.println(img_size);
             imgbyte = new byte[img_size];
@@ -123,7 +123,7 @@ public class MapHandler1 extends ChannelInboundHandlerAdapter {//游戏地图
             response.headers().setInt(CONTENT_LENGTH, ((DefaultFullHttpResponse) response).content().readableBytes());
             ctx.writeAndFlush(response);
         }
-        if (url.equals("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/worldmap.json")) {//请求的其中一张地图，可根据路径找到
+        if (url.equals("E:\\project\\MyGameMap\\web\\Find_Road\\assets\\worldmap.json")) {//请求的其中一张地图，可根据路径找到
             System.out.println(url + "qqqqqqqqqqqqqqqqqq");
             FileInputStream fin = new FileInputStream(url);
             FileChannel fc = fin.getChannel();

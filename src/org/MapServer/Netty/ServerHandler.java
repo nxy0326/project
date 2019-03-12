@@ -49,7 +49,7 @@ ServerHandler extends ChannelInboundHandlerAdapter { //回调类
 
             if (url.equals("/")) {//首次访问返回首页
                 try {
-                    FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/login.html");
+                    FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\login.html");
                     FileChannel fc = fin.getChannel();
                     ByteBuffer bf = ByteBuffer.allocate(2048);
                     String mess = "";
@@ -74,7 +74,7 @@ ServerHandler extends ChannelInboundHandlerAdapter { //回调类
             }
         if (url.equals("/login.html")) {//处理登录页面
             try {
-                FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/login.html");
+                FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\login.html");
                 FileChannel fc = fin.getChannel();
                 ByteBuffer bf = ByteBuffer.allocate(2048);
                 String mess = "";
@@ -100,7 +100,7 @@ ServerHandler extends ChannelInboundHandlerAdapter { //回调类
 
             if (url.equals("/register.html")){//处理注册页面
                 try {
-                    FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/register.html");
+                    FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\register.html");
                     FileChannel fc = fin.getChannel();
                     ByteBuffer bf = ByteBuffer.allocate(4080);
                     String mess = "";
@@ -128,7 +128,7 @@ ServerHandler extends ChannelInboundHandlerAdapter { //回调类
 
                 System.out.println("//////////////////////////sssssssssssss");
                 try {
-                    FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/search.html");
+                    FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\search.html");
                     FileChannel fc = fin.getChannel();
                     ByteBuffer bf = ByteBuffer.allocate(2048);
                     String mess = "";
@@ -153,7 +153,7 @@ ServerHandler extends ChannelInboundHandlerAdapter { //回调类
 
             if (url.equals("/choose.html")){//选择模式页面
                 try {
-                    FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/choose.html");
+                    FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\choose.html");
                     FileChannel fc = fin.getChannel();
                     ByteBuffer bf = ByteBuffer.allocate(2048);
                     String mess = "";
@@ -365,7 +365,7 @@ ServerHandler extends ChannelInboundHandlerAdapter { //回调类
                 String mess = "";
                 byte[] imgbyte;
 
-                FileInputStream fin = new FileInputStream("/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/bg1.jpg");
+                FileInputStream fin = new FileInputStream("E:\\project\\MyGameMap\\web\\Find_Road\\assets\\bg1.jpg");
                 int img_size = fin.available();
 //                    System.out.println(img_size);
                 imgbyte = new byte[img_size];
