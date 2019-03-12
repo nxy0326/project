@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> FindTilePath Demo</title>
+    <script src="/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/phaser.min.js"></script>
+    <script src="/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/TilemapLayer.findTilePath.js"></script>
+    <script src ="/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js"></script>
+    <style>
+        body {margin: 0;padding: 0;	background: url("assets/caodi.jpg")}
+        canvas {margin: 0 auto;	}
+        #gamebox {position: absolute;width: 100%;height: 100%;}
+    </style>
+</head>
+<body>
+<div id="gamebox"></div>
+
+<script type="text/javascript">
+    function Boot(game){
+        this.preload = function() {
+            game.load.spritesheet("loading", "assets/loading.png", 80, 24);
+        };
+        this.create = function() {
+            game.state.start("main");
+        }
+    }
+    function Main(game) {
+        var map;
+        var mapLayer;
+        var hero;
+        this.preload=function () {
+            var loading = game.add.sprite(game.width/2, game.height/2, "loading");
+            loading.anchor.setTo(0.5);
+            loading.animations.add("loading", [0, 1, 2], 5, true);
+            loading.animations.play("loading");
+            game.load.spritesheet("hero", "assets/car.png", 32, 32);
+            game.load.image("maptiles", "assets/pintu.png");
+            game.load.tilemap("worldmap", "/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/roadmap.json", null, Phaser.Tilemap.TILED_JSON);
+        };
+        this.create = function(){
+            map = game.add.tilemap("worldmap");
+            map.addTilesetImage("maptiles");
+            mapLayer = map.createLayer("layer-1");
+            mapLayer.resizeWorld();
+            map.setCollision([2,3,4], true, mapLayer);
+            hero = game.add.sprite(5*32, 3*32, "hero");
+            hero.animations.add("down", [0,1,2,3] , 8, true);
+            hero.animations.add("left", [4,5,6,7] , 8, true);
+            hero.animations.add("right", [8,9,10,11]  , 8, true);
+            hero.animations.add("up",[12,13,14,15] , 8, true);
+            hero.goingX = hero.x;
+            hero.goingY = hero.y;
+            hero.isMoving = false;
+            hero.movePath = [];
+            hero.moveTween = game.add.tween(hero);
+            hero.moveTween.onComplete.add(function(){hero.isMoving = false;}, this);
+            game.camera.follow(hero);
+            mapLayer.inputEnabled = true;;
+            mapLayer.events.onInputDown.add(function(){
+                var x0 = mapLayer.getTileX(hero.goingX);
+                var y0 = mapLayer.getTileY(hero.goingY);
+                var x1 = mapLayer.getTileX(game.input.activePointer.worldX);
+                var y1 = mapLayer.getTileY(game.input.activePointer.worldY);
+                $.ajax({
+                    url: "/road",//地址
+                    type: "post",
+                    datatype: "json",
+                    data: {
+                        "herostopx": x1,
+                        "herostopy": y1,
+                    },    //这里是发送的数据
+                    success: function (ReceivedData) {  // ReceivedData 这里是发送后返回的数据     这个是形参， 可以随便写// 判断是否成功
+                        console.log(typeof (ReceivedData));
+                        console.log("---------解析json----------");
+
+                        var value=JSON.parse(ReceivedData);
+                        console.log(value);
+                        var x = value["x"];
+                        var y = value["y"];
+                        console.log(x+"     "+y);
+                        hero.moveX = x||hero.moveX;
+                        hero.moveY = y||hero.moveY;
+                        //
+                        // var  obj=eval(value);
+                        // alert(obj[0].x);
+                        // console.log(alert(obj[0].x));
+                        // for (var key in value){
+                        //     alert(key);
+                        //     console.log(alert(key));
+                        //     alert(value[key]);
+                        //     console.log(alert(value[key]));
+                        // }
+                        console.log("---------解析json----------");
+
+
+                        // 所执行的函数
+                        console.log("============================================================")
+
+                    },
+                    error: function () {
+                        //失败或者错误以后返回的函数
+                    }
+                })
+            }, this);
+        };
+        this.update = function(){
+            if (!hero.isMoving) {
+                if(hero.moveX.length>0){ // 有路要走？
+                    console.log(hero.moveX+"----------------------------------");
+                    hero.isMoving = true;
+                    var nextTileX =hero.moveX.pop(); // 从路径数组中取出下一步的tile
+                    var nextTileY =hero.moveY.pop();
+                    hero.goingX = nextTileX*32;
+                    hero.goingY = nextTileY*32;
+                    hero.moveTween.timeline = []; // 重复使用tween,清空timeline即可
+                    hero.moveTween.to({x : hero.goingX, y : hero.goingY}, 500, "Linear", true);
+                    if(hero.goingX < hero.x){
+                        hero.animations.play("left");
+                    }else if(hero.goingX > hero.x){
+                        hero.animations.play("right");
+                    }else if(hero.goingY < hero.y){
+                        hero.animations.play("up");
+                    }else if(hero.goingY > hero.y){
+                        hero.animations.play("down");
+                    }
+                }else{
+                    hero.animations.stop();
+                }
+            }
+        };
+    }
+    window.onload = function(){
+        var game = new Phaser.Game(1024, 608, Phaser.CANVAS, "gamebox");
+        game.state.add("boot", Boot);
+        game.state.add("main", Main);
+        game.state.start("boot");
+    };
+</script>
+
+</body>
+</html>

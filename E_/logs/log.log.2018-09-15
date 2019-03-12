@@ -1,0 +1,1270 @@
+[DEBUG] 2018-09-15 07:57:27,214 method:io.netty.util.internal.logging.InternalLoggerFactory.newDefaultFactory(InternalLoggerFactory.java:47)
+Using Log4J as the default logging framework
+[DEBUG] 2018-09-15 07:57:27,308 method:io.netty.channel.MultithreadEventLoopGroup.<clinit>(MultithreadEventLoopGroup.java:44)
+-Dio.netty.eventLoopThreads: 16
+[DEBUG] 2018-09-15 07:57:27,344 method:io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:111)
+-Dio.netty.noKeySetOptimization: false
+[DEBUG] 2018-09-15 07:57:27,344 method:io.netty.channel.nio.NioEventLoop.<clinit>(NioEventLoop.java:112)
+-Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2018-09-15 07:57:27,371 method:io.netty.util.internal.PlatformDependent0.explicitNoUnsafeCause0(PlatformDependent0.java:376)
+-Dio.netty.noUnsafe: false
+[DEBUG] 2018-09-15 07:57:27,372 method:io.netty.util.internal.PlatformDependent0.javaVersion0(PlatformDependent0.java:829)
+Java version: 8
+[DEBUG] 2018-09-15 07:57:27,373 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:120)
+sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2018-09-15 07:57:27,374 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:144)
+sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2018-09-15 07:57:27,375 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:182)
+java.nio.Buffer.address: available
+[DEBUG] 2018-09-15 07:57:27,376 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:243)
+direct buffer constructor: available
+[DEBUG] 2018-09-15 07:57:27,377 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:294)
+java.nio.Bits.unaligned: available, true
+[DEBUG] 2018-09-15 07:57:27,377 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:359)
+jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[DEBUG] 2018-09-15 07:57:27,377 method:io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:366)
+java.nio.DirectByteBuffer.<init>(long, int): available
+[DEBUG] 2018-09-15 07:57:27,377 method:io.netty.util.internal.PlatformDependent.unsafeUnavailabilityCause0(PlatformDependent.java:980)
+sun.misc.Unsafe: available
+[DEBUG] 2018-09-15 07:57:27,378 method:io.netty.util.internal.PlatformDependent.tmpdir0(PlatformDependent.java:1074)
+-Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+[DEBUG] 2018-09-15 07:57:27,378 method:io.netty.util.internal.PlatformDependent.bitMode0(PlatformDependent.java:1153)
+-Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2018-09-15 07:57:27,380 method:io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:132)
+-Dio.netty.noPreferDirect: false
+[DEBUG] 2018-09-15 07:57:27,380 method:io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:172)
+-Dio.netty.maxDirectMemory: 3719299072 bytes
+[DEBUG] 2018-09-15 07:57:27,381 method:io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:178)
+-Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2018-09-15 07:57:27,381 method:io.netty.util.internal.CleanerJava6.<clinit>(CleanerJava6.java:60)
+java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2018-09-15 07:57:27,392 method:io.netty.util.internal.PlatformDependent$Mpsc.<clinit>(PlatformDependent.java:848)
+org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2018-09-15 07:57:27,432 method:io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:79)
+-Dio.netty.processId: 24863 (auto-detected)
+[DEBUG] 2018-09-15 07:57:27,434 method:io.netty.util.NetUtil.<clinit>(NetUtil.java:139)
+-Djava.net.preferIPv4Stack: false
+[DEBUG] 2018-09-15 07:57:27,435 method:io.netty.util.NetUtil.<clinit>(NetUtil.java:140)
+-Djava.net.preferIPv6Addresses: false
+[DEBUG] 2018-09-15 07:57:27,436 method:io.netty.util.NetUtil.<clinit>(NetUtil.java:224)
+Loopback interface: lo (lo, 0:0:0:0:0:0:0:1%lo)
+[DEBUG] 2018-09-15 07:57:27,437 method:io.netty.util.NetUtil$1.run(NetUtil.java:271)
+/proc/sys/net/core/somaxconn: 128
+[DEBUG] 2018-09-15 07:57:27,440 method:io.netty.channel.DefaultChannelId.<clinit>(DefaultChannelId.java:101)
+-Dio.netty.machineId: 02:42:e7:ff:fe:39:20:89 (auto-detected)
+[DEBUG] 2018-09-15 07:57:27,451 method:io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:54)
+-Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2018-09-15 07:57:27,452 method:io.netty.util.internal.InternalThreadLocalMap.<clinit>(InternalThreadLocalMap.java:57)
+-Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2018-09-15 07:57:27,463 method:io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:121)
+-Dio.netty.leakDetection.level: simple
+[DEBUG] 2018-09-15 07:57:27,463 method:io.netty.util.ResourceLeakDetector.<clinit>(ResourceLeakDetector.java:122)
+-Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2018-09-15 07:57:27,588 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:120)
+-Dio.netty.allocator.numHeapArenas: 16
+[DEBUG] 2018-09-15 07:57:27,588 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:121)
+-Dio.netty.allocator.numDirectArenas: 16
+[DEBUG] 2018-09-15 07:57:27,588 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:123)
+-Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2018-09-15 07:57:27,588 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:128)
+-Dio.netty.allocator.maxOrder: 11
+[DEBUG] 2018-09-15 07:57:27,589 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:132)
+-Dio.netty.allocator.chunkSize: 16777216
+[DEBUG] 2018-09-15 07:57:27,589 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:133)
+-Dio.netty.allocator.tinyCacheSize: 512
+[DEBUG] 2018-09-15 07:57:27,589 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:134)
+-Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2018-09-15 07:57:27,589 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:135)
+-Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2018-09-15 07:57:27,589 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:136)
+-Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2018-09-15 07:57:27,590 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:137)
+-Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2018-09-15 07:57:27,590 method:io.netty.buffer.PooledByteBufAllocator.<clinit>(PooledByteBufAllocator.java:138)
+-Dio.netty.allocator.useCacheForAllThreads: true
+[DEBUG] 2018-09-15 07:57:27,599 method:io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:83)
+-Dio.netty.allocator.type: pooled
+[DEBUG] 2018-09-15 07:57:27,600 method:io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:92)
+-Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2018-09-15 07:57:27,600 method:io.netty.buffer.ByteBufUtil.<clinit>(ByteBufUtil.java:95)
+-Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2018-09-15 07:58:14,710 method:io.netty.buffer.AbstractByteBuf.<clinit>(AbstractByteBuf.java:52)
+-Dio.netty.buffer.bytebuf.checkAccessible: true
+[DEBUG] 2018-09-15 07:58:14,711 method:io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory.newResourceLeakDetector(ResourceLeakDetectorFactory.java:202)
+Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1317be56
+[DEBUG] 2018-09-15 07:58:14,821 method:io.netty.util.Recycler.<clinit>(Recycler.java:96)
+-Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2018-09-15 07:58:14,822 method:io.netty.util.Recycler.<clinit>(Recycler.java:97)
+-Dio.netty.recycler.maxSharedCapacityFactor: 2
+[DEBUG] 2018-09-15 07:58:14,822 method:io.netty.util.Recycler.<clinit>(Recycler.java:98)
+-Dio.netty.recycler.linkCapacity: 16
+[DEBUG] 2018-09-15 07:58:14,822 method:io.netty.util.Recycler.<clinit>(Recycler.java:99)
+-Dio.netty.recycler.ratio: 8
+[DEBUG] 2018-09-15 07:58:14,882 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET / HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:15,031 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:15,129 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/a3.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:15,188 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/login_ico.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:15,352 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:25,864 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /register.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:25,914 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:26,010 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/zhucebg.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:26,049 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:41,359 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 24, widx: 24, cap: 24, components=1))
+POST /code HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 24
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:55,291 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 52, widx: 52, cap: 52, components=1))
+POST /pregister HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 52
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:55,317 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /login.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:56,541 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /login.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/register.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:56,579 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:56,596 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/a3.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:56,598 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/login_ico.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:58:56,607 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:07,558 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 50, widx: 50, cap: 50, components=1))
+POST /nvip HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 50
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:07,599 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /search.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:07,716 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/image.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/search.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:07,901 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/search.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,356 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /navigation1.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/search.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,403 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,473 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/TilemapLayer.findTilePath.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,507 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/search_icon.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,510 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/yifulou.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,602 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/tushuguan.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,613 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/Alou.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,665 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/C.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,665 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/B.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,673 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/jiejiao.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,674 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/laojiao.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,695 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/yican.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,696 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/sican.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,775 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/wucan.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,799 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/damen.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,803 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/jidianlou.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:14,965 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/phaser.min.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:15,486 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:15,552 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/loading.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:15,602 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/roadmap.json HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:15,607 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/hero.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:15,607 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/aaa.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:15,622 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+POST /navigation1.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 0
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,469 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /navigation1.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/search.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,491 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/TilemapLayer.findTilePath.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,494 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/yifulou.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,494 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/search_icon.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,498 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/Alou.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,498 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/tushuguan.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,504 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/B.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,504 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/C.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,509 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/laojiao.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,509 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/jiejiao.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,512 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/sican.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,512 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/yican.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,522 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/wucan.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,522 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/damen.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,526 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/jidianlou.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,527 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:52,840 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/phaser.min.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:53,035 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:53,040 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/loading.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:53,056 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/hero.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:53,056 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/roadmap.json HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:53,056 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/aaa.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 07:59:53,071 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+POST /navigation1.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 0
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Referer: http://localhost:9999/navigation1.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:13,712 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/search.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:15,324 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:30,106 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 49, widx: 49, cap: 49, components=1))
+POST /vip HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 49
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:30,173 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /choose.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/login.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:30,267 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/choose.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:31,464 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /game.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/choose.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:31,518 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/TilemapLayer.findTilePath.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:31,522 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/Cutiebot2.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:31,523 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/Cutiebot5.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:31,538 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:31,845 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/phaser.min.js HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,011 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/stripes.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,011 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/green.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,065 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,072 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/loading.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,128 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/guaiwu.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,128 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /home/wwj/IdeaProjects/MyGameMap/web/Find_Road/assets/worldmap.json HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: */*
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,131 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/robot.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:32,138 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/maptiles.png HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:42,675 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 69, widx: 69, cap: 69, components=1))
+POST /value HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 69
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:00:44,747 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 69, widx: 69, cap: 69, components=1))
+POST /value1 HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 69
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:01:03,031 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 51, widx: 51, cap: 51, components=1))
+POST /A HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 51
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:01:03,031 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 51, widx: 51, cap: 51, components=1))
+POST /A HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Content-Length: 51
+Accept: */*
+Origin: http://localhost:9999
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Referer: http://localhost:9999/game.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:01:13,443 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/choose.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:01:14,565 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /create.html HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:9999/choose.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:01:14,798 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /assets/createbg.jpg HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/create.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.
+[DEBUG] 2018-09-15 08:01:14,803 method:io.netty.channel.DefaultChannelPipeline.onUnhandledInboundMessage(DefaultChannelPipeline.java:1218)
+Discarded inbound message HttpObjectAggregator$AggregatedFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 0, cap: 0, components=0))
+GET /favicon.ico HTTP/1.1
+Host: localhost:9999
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://localhost:9999/create.html
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: Idea-c728b2d3=e0aae5f2-2556-43fc-b379-99e1b1910788
+content-length: 0 that reached at the tail of the pipeline. Please check your pipeline configuration.

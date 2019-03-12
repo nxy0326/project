@@ -1,0 +1,412 @@
+//  游戏状态 0: 未开始;1 运行; 2 中止;
+var status=0;
+//  定时器
+var timer=new Date();
+//  分数
+var score=0;
+//  游戏主面板
+var table;
+//  用来标注方格是否被占据：为占据为0，占据为1
+//  25行的数组中含有每行18列的数组
+var board=new Array(25);
+for(var i=0;i<25;i++){
+board[i]=new Array(18);
+}
+//    每个方格初始状态都为0
+for(var i=0;i<25;i++){
+for(var j=0;j<18;j++){
+board[i][j]=0;
+}
+}
+
+//  定义活动方块：
+//    1、7种随机形状
+//         (每个基本形状由4个方格构成，分别写7种基本形状）
+//        （t凑4）
+//        （parseInt() 函数可解析一个字符串，并返回一个整数。Math.random是0.0~1.0的随机数)
+//    2、向下/左/右移动（触底后更新board）
+//    3、旋转（当触碰到左/右/下边界时不可旋转）
+var activeBlock;
+function createBlock() {
+activeBlock=null;
+activeBlock=new Array(4)
+var y = parseInt(Math.random()*7);
+
+switch (y){
+case 0:{
+activeBlock[0]={x:0,y:7};
+activeBlock[1]={x:0,y:8};
+activeBlock[2]={x:0,y:9};
+activeBlock[3]={x:0,y:10};
+break;
+}
+case 1:{
+activeBlock[0]={x:0,y:7};
+activeBlock[1]={x:0,y:8};
+activeBlock[2]={x:1,y:8};
+activeBlock[3]={x:1,y:7};
+break;
+}
+case 2:{
+activeBlock[0]={x:0,y:7};
+activeBlock[1]={x:1,y:7};
+activeBlock[2]={x:1,y:8};
+activeBlock[3]={x:1,y:9};
+break;
+}
+case 3:{
+activeBlock[0]={x:0,y:8};
+activeBlock[1]={x:1,y:7};
+activeBlock[2]={x:1,y:8};
+activeBlock[3]={x:1,y:9};
+break;
+}
+case 4:{
+activeBlock[0]={x:0,y:9};
+activeBlock[1]={x:1,y:7};
+activeBlock[2]={x:1,y:8};
+activeBlock[3]={x:1,y:9};
+break;
+}
+case 5:{
+activeBlock[0]={x:0,y:7};
+activeBlock[1]={x:0,y:8};
+activeBlock[2]={x:1,y:8};
+activeBlock[3]={x:1,y:9};
+break;
+}
+case 6:{
+activeBlock[0]={x:0,y:8};
+activeBlock[1]={x:0,y:9};
+activeBlock[2]={x:1,y:7};
+activeBlock[3]={x:1,y:8};
+break;
+}
+}
+for(var i=0;i<4;i++){
+if (!isBlockValid(activeBlock[i].x,activeBlock[i].y)){
+return false;
+}
+}
+return true;
+}
+// 数据存储(暂停中用)
+var dataBlock=new Array(4);
+for(var i=0; i<4; i++){
+dataBlock[i] = {x:0, y:0};
+}
+// 没有触底便擦掉当前图形，下移一个，重画图形；否则停止自动向下移动，判断是否可以消行
+function moveDown() {
+
+if(checkBottomBorder()){
+erase();
+for(var i=0;i<4;i++){
+activeBlock[i].x=activeBlock[i].x+1;
+}
+paint();
+}
+//      window.clearInterval() 方法可以不使用window前缀，直接使用函数clearInterval()。
+//      要使用 clearInterval() 方法, 在创建计时方法时你必须使用全局变量
+else {
+clearInterval(timer);
+updateBoard();
+//           消行
+var lines=deleteLine();
+if(lines!=0){
+score=score+lines*10;
+updateScore();
+eraseBoard();
+paintBoard();
+}
+if(!createBlock()){
+alert("Game over!");
+status=2;
+return;
+}
+paint();
+timer=setInterval(moveDown,1000)
+}
+}
+// 左移
+function moveLeft() {
+if(checkLeftBoard()){
+erase();
+for(var i=0;i<4;i++){
+activeBlock[i].y=activeBlock[i].y-1;
+}
+paint();
+}
+}
+// 右移
+function moveRight() {
+if(checkRightBoard()){
+erase();
+for(var i=0;i<4;i++){
+activeBlock[i].y=activeBlock[i].y+1;
+}
+paint();
+}
+}
+// 旋转（tBlock是一个二维数组，作为中间值暂存activeBlock的数据）
+function rotate() {
+var tBlock=new Array(activeBlock.length);
+for (var i=0;i<activeBlock.length;i++){
+tBlock[i]={x:0,y:0};
+}
+for(var i=0;i<activeBlock.length;i++){
+tBlock[i].x=activeBlock[i].x;
+tBlock[i].y=activeBlock[i].y;
+}
+//      求中心点坐标,逆时针旋转90度,检查中转值是否合法，若合法，则擦除图形，将中转值给原值赋值,重绘图形。
+//      round() 方法可把一个数字舍入为最接近的整数。
+var cx=Math.round((tBlock[0].x+tBlock[1].x+tBlock[2].x+tBlock[3].x)/4);
+var cy=Math.round((tBlock[0].y+tBlock[1].y+tBlock[2].y+tBlock[3].y)/4);
+for (var i=0;i<activeBlock.length;i++){
+tBlock[i].x=cx+cy-activeBlock[i].y;
+tBlock[i].y=cy-cx+activeBlock[i].x;
+}
+for(var i=0;i<activeBlock.length;i++){
+if(!isBlockValid(tBlock[i].x,tBlock[i].y)){
+return;
+}
+}
+erase();
+for (var i=0;i<activeBlock.length;i++){
+activeBlock[i].x=tBlock[i].x;
+activeBlock[i].y=tBlock[i].y;
+}
+paint();
+}
+//  检查是否到底（若其下方有方块则不能下移，若已经到达面板最底部则不能下移，否则可下移）
+function checkBottomBorder() {
+for(var i=0;i<activeBlock.length;i++){
+if(activeBlock[i].x==24){
+return false;
+}
+if(!isBlockValid(activeBlock[i].x+1,activeBlock[i].y)){
+return false;
+}
+
+}
+return true;
+}
+//    检查左边界，如果方块左移不合法，返回false；如果触碰左边界，返回false；否则返回true
+function checkLeftBoard() {
+for(var i=0;i<activeBlock.length;i++){
+if(!isBlockValid(activeBlock[i].x,activeBlock[i].y-1)){
+return false;
+}
+if(activeBlock[i].y==0){
+return false;
+}
+}
+return true;
+}
+//    检查右边界，如果方块右移不合法，返回false；如果触碰右边界，返回false；否则返回true
+function checkRightBoard() {
+for(var i=0;i<activeBlock.length;i++){
+if(!isBlockValid(activeBlock[i].x,activeBlock[i].y+1)){
+return false;
+}
+if(activeBlock[i].y==17){
+return false;
+}
+}
+return true;
+}
+//  检查方块是否合法（若超出边界则不合法，若这个方格状态已经为1则不能再放）
+function isBlockValid(x,y) {
+if(x<0||x>24||y<0||y>17){
+return false;
+}
+if(board[x][y]==1){
+return false;
+}
+
+return true;
+}
+//    擦除图形
+function erase() {
+for(var i=0;i<4;i++){
+table.rows[activeBlock[i].x].cells[activeBlock[i].y].style.backgroundColor="#ffb59a";
+}
+}
+//    重绘图形
+function paint() {
+for(var i=0;i<4;i++){
+table.rows[activeBlock[i].x].cells[activeBlock[i].y].style.backgroundColor="#fbf5fb";
+}
+}
+//    更新board数组，使方格被占据
+function updateBoard() {
+for(var i=0;i<4;i++){
+board[activeBlock[i].x][activeBlock[i].y]=1;
+}
+}
+//    消行：
+//    检查方格状态，某行有状态为0的方格则跳出循环
+//    如果某行循环完，则满行行数自增
+//    k为上一行,i!=0根据k=i-1，k>=0得出整行下降
+//    创建新空白行
+//    返回lines值
+function deleteLine() {
+var lines=0;
+for(var i=0;i<25;i++){
+var j=0;
+for(;j<18;j++){
+if(board[i][j]==0){
+break;
+}
+}
+if (j==18){
+lines++;
+if(i!=0){
+for(var k=i-1;k>=0;k--){
+board[k+1]=board[k];
+}
+}
+board[0]=createBlankLine();
+}
+}
+return lines;
+}
+//    产生空白行，new一个18的一维数组，使方格不被占据
+function createBlankLine() {
+var line=new Array(18);
+for(var i=0;i<18;i++){
+line[i]=0;
+}
+return line;
+}
+// 更新分数，通过document对象的getElementById方法访问html中的score，改变其内容。
+function updateScore() {
+document.getElementById("score").innerText=" "+score;
+}
+// 擦除游戏面板，遍历table，将行列的背景颜色改为粉色
+function eraseBoard() {
+for(var i=0;i<25;i++){
+for(var j=0;j<18;j++){
+table.rows[i].cells[j].style.backgroundColor="#ffb59a";
+}
+}
+}
+// 重画游戏面板，遍历table，如果方格被占据，将行列的背景颜色改为白色
+function paintBoard() {
+for(var  i=0;i<25;i++){
+for(var j=0;j<18;j++){
+if(board[i][j]==1){
+table.rows[i].cells[j].style.backgroundColor="#fbf5fb";
+}
+
+}
+}
+
+}
+//    开始，使状态为运行状态，如果不能产生方块，游戏结束；如果使运行状态，访问start修改其value为fighting!
+function start() {
+status=1;
+table=document.getElementById("board");
+if(!createBlock()){
+alert("Game over!");
+status=2;
+return;
+}
+if(status==1){
+var btn=document.getElementById("start");
+btn.value="fighting!";
+document.getElementById("start").disabled=true;
+
+}
+paint();
+timer=setInterval(moveDown,1000);
+}
+// 重新开始，清除面板，分值清0，遍历使所有方格不被占据，释放timer，get board。
+function restart() {
+eraseBoard();
+score=0;
+document.getElementById("score").innerText=score;
+for(var i=0;i<25;i++){
+for(var j=0;j<18;j++){
+board[i][j]=0;
+}
+}
+clearInterval(timer);
+status=1;
+table=document.getElementById("board");
+if(!createBlock()){
+alert("Game over!");
+status=2;
+return;
+}
+paint();
+timer=setInterval(moveDown,1000);
+
+}
+// 暂停/继续转换，若为终止状态（释放timer），button变继续；否则为运行状态，button变暂停。
+// （dataBlock为一个二维数组，用来暂存图形数据,以免继续时，不是先前的图形执行。）
+function pause() {
+table=document.getElementById("board");
+for(var i=0; i<4; i++) {
+dataBlock[i].x = activeBlock[i].x;
+dataBlock[i].y = activeBlock[i].y;
+}
+if (status!=2){
+clearTimeout(timer);
+status=2;
+var btn=document.getElementById("pause");
+btn.value="resume";
+return true;
+}
+status=1;
+var btn=document.getElementById("pause");
+btn.value="pause";
+for(var i=0;i<4;i++){
+if(!isBlockValid(dataBlock[i].x,dataBlock[i].y)){
+return;
+}
+}
+erase();
+for (var i=0;i<4;i++){
+activeBlock[i].x=dataBlock[i].x;
+activeBlock[i].y=dataBlock[i].y;
+}
+paint();
+timer=setInterval(moveDown,1000);
+}
+//    键盘控制
+//function demo1(e){
+//      var e = e || window.event;
+//此种方法在ie中和google中可以不传参数e也可以获取到event，
+// 但是在火狐中必须在事件方法中传递event参数才可以获取到event对象。
+//window.event适用于ie和google浏览器火狐不支持。
+//arguments.callee.caller.arguments[0]仅火狐和google支持，ie不支持这种获取方式。
+//左箭头-左移、右箭头-右移、下箭头-下移、上箭头-旋转。
+document.onkeydown=keyControl;
+function keyControl(event) {
+if(status!=1){
+return;
+}
+var code=event||window.event||arguments.callee.caller.arguments[0];
+switch (code && code.keyCode){
+case 37:{
+moveLeft();
+break;
+}
+case 38:{
+rotate();
+break;
+}
+case 39:{
+moveRight();
+break;
+}
+case 40:{
+moveDown();
+break;
+}
+}
+}
+//setTimeout()未来的某时执行代码,只执行code一次
+//clearTimeout()取消setTimeout()
+//setInterval()不停的调用函数
+//直到clearInterval()被调用或窗口被关闭

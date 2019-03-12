@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2c6416f-228e-46a3-ad35-65128aebe3e7" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1596521466">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="html" value="13" />
+          <entry key="html___jb_tmp___" value="2" />
+          <entry key="jpg" value="2" />
+          <entry key="js" value="25" />
+          <entry key="json" value="4" />
+          <entry key="monsterlocation" value="1" />
+          <entry key="png" value="18" />
+          <entry key="ts" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="13" />
+          <entry key="Image" value="20" />
+          <entry key="JSON" value="3" />
+          <entry key="JavaScript" value="25" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="TypeScript" value="1" />
+          <entry key="tsconfig" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="5056" />
+          <entry key="js" value="1573" />
+          <entry key="json" value="100" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="5056" />
+          <entry key="JSON" value="100" />
+          <entry key="JavaScript" value="1572" />
+          <entry key="RegExp" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/TilemapLayer.findTilePath.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="445" column="44" lean-forward="true" selection-start-line="445" selection-start-column="44" selection-end-line="445" selection-end-column="44" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#483#545#0" />
+                <element signature="e#610#715#0" />
+                <element signature="e#736#857#0" />
+                <element signature="e#878#939#0" />
+                <element signature="e#961#1022#0" />
+                <element signature="e#1040#1197#0" />
+                <element signature="e#1219#1281#0" />
+                <element signature="e#1301#1666#0" />
+                <element signature="e#1691#2402#0" />
+                <element signature="n#div#0;n#head#0;n#html#0;n#!!top" />
+                <element signature="e#5789#6357#0" />
+                <element signature="e#8886#9009#0" />
+                <element signature="e#9240#9249#0" />
+                <element signature="e#9854#9948#0" />
+                <element signature="e#9729#12765#0" />
+                <element signature="e#16028#16056#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/phaser.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="10315" column="12" selection-start-line="10315" selection-start-column="12" selection-end-line="10315" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>tmpTile</find>
+      <find>roundTilesAll</find>
+      <find>roundTiles</find>
+      <find>step</find>
+      <find>Tilem</find>
+      <find>TilemapLayer.findTilePath</find>
+      <find>rounds</find>
+      <find>tarTile</find>
+      <find>ph</find>
+      <find>x0</find>
+      <find>hero.goingX</find>
+      <find>ax</find>
+      <find>findTilePath</find>
+      <find>isM</find>
+      <find>ismi</find>
+      <find>Boot</find>
+      <find>moveLengthLeft</find>
+      <find>moveLengthTop</find>
+      <find>src</find>
+      <find>animations</find>
+      <find>hero</find>
+      <find>WA</find>
+      <find>moveTween</find>
+      <find>console</find>
+      <find>worldX</find>
+      <find>timeline</find>
+      <find>ajax</find>
+      <find>pop()</find>
+      <find>layer</find>
+      <find>moveX</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/assets/monsterlocation.json" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/monster.json" />
+        <option value="$PROJECT_DIR$/te.html" />
+        <option value="$PROJECT_DIR$/assets/worldmap.json" />
+        <option value="$PROJECT_DIR$/aaa.html" />
+        <option value="$PROJECT_DIR$/js/worldmap.json" />
+        <option value="$PROJECT_DIR$/walk.js" />
+        <option value="$PROJECT_DIR$/js/TilemapLayer.findTilePath1.js" />
+        <option value="$PROJECT_DIR$/js/phaser.min.js" />
+        <option value="$PROJECT_DIR$/js/TilemapLayer.findTilePath.js" />
+        <option value="$PROJECT_DIR$/test.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-11" />
+    <option name="width" value="1218" />
+    <option name="height" value="1031" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Find_Road" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Find_Road" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Find_Road" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Find_Road" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Find_Road" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Find_Road" type="462c0819:PsiDirectoryNode" />
+              <item name="walkpic" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xunlu" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\learning\webstorm\Find_Road\walkpic" />
+      <recent name="C:\learning\webstorm\Find_Road\js" />
+      <recent name="C:\learning\webstorm\Find_Road\assets" />
+      <recent name="C:\learning\webstorm\Find_Road" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="walk.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="walk.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.walk.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2c6416f-228e-46a3-ad35-65128aebe3e7" name="Default Changelist" comment="" />
+      <created>1533820552114</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533820552114</updated>
+      <workItem from="1533820553517" duration="8582000" />
+      <workItem from="1533885095863" duration="4568000" />
+      <workItem from="1533905424043" duration="27686000" />
+      <workItem from="1533993684312" duration="342000" />
+      <workItem from="1534000952280" duration="1221000" />
+      <workItem from="1534037525707" duration="1191000" />
+      <workItem from="1534057540465" duration="256000" />
+      <workItem from="1534058021328" duration="11000" />
+      <workItem from="1534059985886" duration="13661000" />
+      <workItem from="1534129312399" duration="1266000" />
+      <workItem from="1534152216030" duration="38237000" />
+      <workItem from="1534408548634" duration="73773000" />
+      <workItem from="1534661258933" duration="5583000" />
+      <workItem from="1534682856574" duration="62895000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="239272000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="812" height="687" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49907234" visible="true" weight="0.1765464" />
+      <window_info id="Structure" order="2" sideWeight="0.5009276" side_tool="true" weight="0.15726767" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" weight="0.32467532" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/loading.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Preview7.png" />
+    <entry file="file://$PROJECT_DIR$/assets/ArmorDeath.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/robot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/r_pic.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Mech2Walk.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/tsconfig.json" />
+    <entry file="file://$PROJECT_DIR$/assets/monsterlocation.json" />
+    <entry file="file://$PROJECT_DIR$/assets/lb.png" />
+    <entry file="file://$PROJECT_DIR$/assets/pic1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Cutiebot5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/Cutiebot2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/monster.json" />
+    <entry file="file://$PROJECT_DIR$/assets/worldmap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html___jb_tmp___" />
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="1155" column="4" selection-start-line="1155" selection-start-column="4" selection-end-line="1155" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/maptiles.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aaa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/worldmap.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hero.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/te.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="215" column="10" lean-forward="true" selection-start-line="193" selection-end-line="216" />
+          <folding>
+            <element signature="e#6452#7478#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/TilemapLayer.findTilePath1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3439">
+          <caret line="193" selection-start-line="99" selection-end-line="193" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/walk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/TilemapLayer.findTilePath.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/phaser.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="10315" column="12" selection-start-line="10315" selection-start-column="12" selection-end-line="10315" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="445" column="44" lean-forward="true" selection-start-line="445" selection-start-column="44" selection-end-line="445" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#1;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#483#545#0" />
+            <element signature="e#610#715#0" />
+            <element signature="e#736#857#0" />
+            <element signature="e#878#939#0" />
+            <element signature="e#961#1022#0" />
+            <element signature="e#1040#1197#0" />
+            <element signature="e#1219#1281#0" />
+            <element signature="e#1301#1666#0" />
+            <element signature="e#1691#2402#0" />
+            <element signature="n#div#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#5789#6357#0" />
+            <element signature="e#8886#9009#0" />
+            <element signature="e#9240#9249#0" />
+            <element signature="e#9854#9948#0" />
+            <element signature="e#9729#12765#0" />
+            <element signature="e#16028#16056#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

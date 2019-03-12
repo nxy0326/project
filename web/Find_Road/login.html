@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+    <script src = "/home/wwj/IdeaProjects/MyGameMap/web/Find_Road/js/jquery.js"></script>
+
+    <style type="text/css">
+
+
+
+        body{
+            font-family: "微软雅黑";/*规定元素的字体*/
+            font-size: 14px;
+            background: url(assets/a3.jpg) ;
+            background-repeat:no-repeat;/*重复背景图像，背景仅显示一次*/
+            background-position:center;/*背景的起始位置，默认0% 0%*/
+        }
+        .logo_box{
+            width: 280px;
+            height: 490px;
+            padding: 35px; /*内边距*/
+            color: #EEE;
+            position: absolute;/*定位类型，绝对定位*/
+            left: 50%;
+            top:60px;
+            margin-left: -175px;/* */
+        }
+        .logo_box h3{
+            text-align: center;/*规定文本的水平对齐方式*/
+            height: 20px;
+            font: 20px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei",sans-serif;
+            color: #FFFFFF;
+            height: 20px;
+            line-height: 20px;/*行间距离（行高）*/
+            padding:0 0 35px 0;
+        }
+        .forms{
+            width: 280px;
+            height: 485px;
+        }
+
+        .input_outer{
+            height: 46px;
+            padding: 0 5px;
+            margin-bottom: 20px;/*下边距*/
+            border-radius: 50px;
+            position: relative;/*相对定位*/
+            border: rgba(255,255,255,0.2) 2px solid /*实线*/
+        }
+        .u_user{
+            width: 25px;
+            height: 25px;
+            background: url(assets/login_ico.png);
+            background-position:  -125px 0;
+            position: absolute;
+            margin: 12px 13px;/*外边距 上，右*/
+        }
+        .us_uer{
+            width: 25px;
+            height: 25px;
+            background-image: url(assets/login_ico.png);
+            background-position: -125px -34px;
+            position: absolute;
+            margin: 12px 13px;
+        }
+
+
+        .text{
+            width: 220px;
+            height: 46px;
+            outline: none;/*轮廓样式，无轮廓*/
+            display: inline-block;/*规定元素生成的块的类型，行内块元素*/
+            font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+            margin-left: 50px;
+            border: none;
+            background: none;
+            line-height: 46px;/*行高*/
+        }
+
+
+        .log-bwn input[type="button"] {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+            padding: 13px 0;
+            background: #ff3366;
+            display: inline-block;
+            width: 100%;
+            outline:none;
+            border:2px solid #ff3366;
+            cursor:pointer;/*显示的光标的类型（形状），指示链接的指针（一只手）*/
+            text-transform:uppercase;/*控制文本的大小写，仅有大写*/
+            border-radius: 50px;
+        }
+        .radio1{
+            margin: 15px;
+
+        }
+        #user1{
+            float: left;
+            width: 18%;
+        }
+        #user2{
+            width: 18%;
+        }
+        a{
+            float: right;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="logo_box">
+    <h3>登录</h3>
+    <form>
+        <div class="radio1">
+            <input id="user1" type="radio" name="choose" value="pt" checked="checked"/>普通用户
+            <input id="user2"  type="radio" name="choose" value="vip"/>VIP用户
+        </div>
+        <div class="input_outer">
+            <span class="u_user"></span><!--用<span>来组合行内元素-->
+            <input id="logname" name="logname" class="text" onFocus=" if(this.value=='请输入用户名') this.value=''" onBlur="if(this.value=='') this.value='请输入用户名'" value="请输入用户名" style="color: #FFFFFF !important" type="text">
+        </div>
+        <div class="input_outer">
+            <span class="us_uer"></span>
+
+            <input  id="logpass" name="logpass" class="text" onFocus=" if(this.value=='请输入密码') this.value=''" onBlur="if(this.value=='') this.value='请输入密码'" value="请输入密码" style="color: #FFFFFF !important" type="text"/>
+        </div>
+        <div class="log-bwn">
+            <input  id="btlog" type="button" value="Login" style="color:#FFFFFF">
+        </div>
+    </form>
+
+
+    <p><a    href="register.html">注册</a></p>
+
+
+</div>
+<script>
+    $("#btlog").click(function () {
+        var logname=$("#logname").val();
+        var logpass=$("#logpass").val();
+        var portals=document.getElementsByName("choose");
+        for (var i=0;i<portals.length;i++) {
+            if (portals[i].checked) {
+                if (portals[i].value === "pt") {
+                    if (logname === "请输入用户名" || logpass === "请输入密码") {
+                        alert("输入内容不能为空！")
+                    } else {
+
+                        $.ajax({
+                            type: "post",
+                            url: "/nvip",
+                            datatype: "json",
+                            data: {'logname': logname, 'logpass': logpass, 'user': "pt"},
+                            success: function () {
+                                window.location.href = "search.html"
+                            },
+                            error: function () {
+                                alert("用户名或密码错误！！！！")
+                            }
+                        })
+                    }
+
+                }
+                else if (portals[i].value === 'vip') {
+                    if (logname === "请输入用户名" || logpass === "请输入密码") {
+                        alert("输入内容不能为空！")
+                    } else {
+
+                        $.ajax({
+                            type: "post",
+                            url: "/vip",
+                            datatype: "json",
+                            data: {'logname': logname, 'logpass': logpass, 'user': "vip"},
+                            success: function () {
+                            }
+                        })
+                        window.location.href = "choose.html"
+                    }
+
+                }
+            }
+        }
+    })
+
+
+
+</script>
+</body>
+</html>

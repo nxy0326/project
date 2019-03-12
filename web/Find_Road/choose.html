@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择模式</title>
+    <style>
+        .bg{
+            background-image: url("./assets/bg1.jpg");
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+        .describe{
+            animation: change 10s linear 0s infinite;
+            font-weight: 700;
+            font-size: 130px;
+        }
+        @keyframes change{0% {color: #333;}
+            25%{color: #ff0;}
+            50%{color:#f60;}
+            75%{color:#cf0;}
+            100%{color:#f00;}
+        }
+        button{
+            width: 300px;
+            height:300px;
+            padding:8px;
+            background-color: orange;
+            border-color:orangered;
+            color:yellow;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px; /* future proofing */
+            -khtml-border-radius: 10px; /* for old Konqueror browsers */
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            font-weight: 900;
+            font-size: 100px;
+            margin: 30px 150px 0px 150px;
+        }
+        #bt1{
+            float: left;
+        }
+        #bt2{
+            float: right;
+        }
+    </style>
+</head>
+<body class="bg">
+<div>
+    <div class="describe">
+        <div style="text-align: center;">Choice Model</div>
+    </div>
+    <div>
+        <button  id="bt1" onclick="location.href='game.html'" onmouseover="this.style.backgroundColor='orangered';"
+                 onmouseout="this.style.backgroundColor='';">游戏模式</button>
+    </div>
+    <div>
+        <button id="bt2" onclick="location.href='create.html'" onmouseover="this.style.backgroundColor='orangered';"
+                onmouseout="this.style.backgroundColor='';">导航模式</button>
+    </div>
+    <!--<div>-->
+    <!--<button onclick="location.href='test.html'" onmouseover="this.style.backgroundColor='orangered';"-->
+    <!--onmouseout="this.style.backgroundColor='';">地图模式</button>-->
+    <!--</div>-->
+</div>
+
+</body>
+</html>
